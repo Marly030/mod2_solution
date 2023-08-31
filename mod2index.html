@@ -1,1 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mod02 index</title>
+<style>
+    * {
+        box-sizing: border-box;
+    }
 
+    body {
+        margin: 0; 
+        padding: 20px;
+    }
+
+    div {
+        display: flex; 
+        justify-content: space-between; 
+        position: relative; /* Agregamos posicionamiento relativo a los contenedores div */
+    }
+
+    p {
+        width: calc(33.33% - 20px); 
+        border: 2px solid #000000;
+        margin-right: 20px; 
+        padding: 10px;
+        background-color: rgb(255, 255, 255);
+        position: relative; /* Agregamos posicionamiento relativo a los párrafos */
+    }
+
+    .chicken,
+    .beef,
+    .sushi {
+        width: 50px;
+        height: 50px;
+        border: 2px solid #000000;
+        position: absolute; /* Cambiamos a posicionamiento absoluto */
+    }
+
+    .chicken {
+        background-color: rgb(242, 166, 125);
+        left: -20px; /* Ajustamos la posición a la izquierda para que esté dentro del párrafo */
+        top: -20px; /* Ajustamos la posición hacia arriba */
+    }
+
+    .beef {
+        background-color: rgb(172, 25, 25);
+        right: calc(33.33% - 20px); /* Ajustamos la posición a la derecha para que esté dentro del párrafo */
+        top: -20px; /* Ajustamos la posición hacia arriba */
+    }
+
+    .sushi {
+        background-color: rgb(239, 206, 154);
+        right: -20px; /* Ajustamos la posición a la derecha para que esté dentro del párrafo */
+        bottom: -20px; /* Ajustamos la posición hacia abajo */
+    }
+
+    #p1 {
+        background-color: rgb(128, 128, 130);
+    }
+    #p2 {
+        background-color: rgb(125, 125, 126);
+    }
+    #p3 {
+        background-color: rgb(125, 125, 126);
+    }
+
+    h1 {
+        text-align: center;
+    }
+    
+</style>
+</head>
+<body>
+    <h1>Our menu</h1>
+    <div>
+        <div class="chicken">
+            <h4>chicken</h4>
+        </div>
+        <p id="p1">Lorem ipsum dolor sit amet consectetur adipiscing elit mattis velit curae, vivamus massa cursus quisque inceptos vulputate neque proin libero</p>  
+        <div class="beef">
+            <h4>beef</h4>
+        </div>
+        <p id="p2">Lorem ipsum dolor sit amet consectetur adipiscing elit mattis velit curae, vivamus massa cursus quisque inceptos vulputate neque proin libero</p>
+        <div class="sushi">
+            <h4>sushi</h4>
+        </div>
+        <p id="p3">Lorem ipsum dolor sit amet consectetur adipiscing elit mattis velit curae, vivamus massa cursus quisque inceptos vulputate neque proin libero</p>
+    </div>
+</body>
+</html>
